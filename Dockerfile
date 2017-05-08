@@ -3,7 +3,7 @@ ARG JUMANPP_VERSION=1.02
 
 WORKDIR /usr/local/src/
 # JUMANPP ßß
-RUN apk --no-cache add curl which xz bzip2 gcc bash g++ boost-dev make jq perl ;\
+RUN apk --no-cache add curl which xz bzip2 gcc bash g++ boost-dev make ;\
     curl -o /usr/local/src/jumanpp-${JUMANPP_VERSION}.tar.xz "http://lotus.kuee.kyoto-u.ac.jp/nl-resource/jumanpp/jumanpp-${JUMANPP_VERSION}.tar.xz" ;\
     tar Jxf jumanpp-${JUMANPP_VERSION}.tar.xz ;\
     cd jumanpp-${JUMANPP_VERSION} ;\
